@@ -5,14 +5,14 @@ metadata:
   namespace: openshift-compliance
 profiles:
   # Node checks
-  - name: rhcos4-moderate
+  - name: rhcos4-high
     kind: Profile
     apiGroup: compliance.openshift.io/v1alpha1
   # Platform checks
-  - name: ocp4-moderate
+  - name: ocp4-high
     kind: Profile
     apiGroup: compliance.openshift.io/v1alpha1
 settingsRef:
-  name: nist-scan-setting
+  name: nist-high-scan-setting
   kind: ScanSetting
   apiGroup: compliance.openshift.io/v1alpha1
