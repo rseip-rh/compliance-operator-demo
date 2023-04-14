@@ -1,0 +1,17 @@
+apiVersion: "v1"
+kind: Pod
+metadata:
+  name: pv-extract-ocp4-high
+  namespace: openshift-compliance
+spec:
+  containers:
+    - name: pv-extract-ocp4-high
+      image: registry.access.redhat.com/ubi8/ubi
+      command: ["sleep", "3000"]
+      volumeMounts:
+        - mountPath: "/ocp4-high-scan-results"
+          name: ocp4-high-scan-vol
+  volumes:
+    - name: ocp4-high-scan-vol
+      persistentVolumeClaim:
+        claimName: ocp4-high
