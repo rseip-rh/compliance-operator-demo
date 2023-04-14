@@ -1,7 +1,7 @@
 apiVersion: compliance.openshift.io/v1alpha1
 kind: ScanSetting
 metadata:
-  name: nist-scan-setting
+  name: nist-high-scan-setting
   namespace: openshift-compliance
 schedule: "0 1 * * *"
 rawResultStorage:
