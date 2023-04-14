@@ -1,7 +1,7 @@
 apiVersion: compliance.openshift.io/v1alpha1
 kind: ScanSettingBinding
 metadata:
-  name: nist-scan-setting-binding
+  name: nist-high-scan-setting-binding
   namespace: openshift-compliance
 profiles:
   # Node checks
